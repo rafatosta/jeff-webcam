@@ -1,6 +1,6 @@
 {
   "packageId": "com.rtosta.app.jeffcam",
-  "host": "app.revolt.chat",
+  "host": "rtosta.com",
   "name": "Revolt",
   "launcherName": "Revolt",
   "display": "standalone",
@@ -21,8 +21,8 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "9",
-  "appVersionCode": 9,
+  "appVersionName": "13",
+  "appVersionCode": 13,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://rtosta.com/jeff-webcam/manifest.webmanifest",
@@ -39,5 +39,5 @@
   "fingerprints": [],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "9"
+  "appVersion": "13"
 }
