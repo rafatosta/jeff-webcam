@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import { prominent } from 'color.js';
 import './App.css';
