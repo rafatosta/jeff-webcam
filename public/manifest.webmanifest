@@ -1,7 +1,7 @@
 {
     "name": "Revolt",
     "short_name": "Revolt",
-    "start_url": "https://rtosta.com/jeff-webcam",
+    "start_url": "/jeff-webcam",
     "display": "standalone",
     "background_color": "#101823",
     "lang": "en",
