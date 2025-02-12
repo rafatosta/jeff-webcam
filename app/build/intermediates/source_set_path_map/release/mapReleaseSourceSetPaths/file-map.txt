@@ -1,0 +1,10 @@
+com.rtosta.app.jeffcam.app-core-1.1.0-0 /home/tosta/.gradle/caches/8.8/transforms/2144911bb09dce3a07f407e3b390637e/transformed/core-1.1.0/res
+com.rtosta.app.jeffcam.app-browser-1.4.0-1 /home/tosta/.gradle/caches/8.8/transforms/b511174c15fdde7dea3e957094b4390b/transformed/browser-1.4.0/res
+com.rtosta.app.jeffcam.app-androidbrowserhelper-2.5.0-2 /home/tosta/.gradle/caches/8.8/transforms/d3335fbdff4200978ad121d7b141def7/transformed/androidbrowserhelper-2.5.0/res
+com.rtosta.app.jeffcam.app-pngs-3 /home/tosta/Documentos/GitHub/jeff-webcam/app/build/generated/res/pngs/release
+com.rtosta.app.jeffcam.app-resValues-4 /home/tosta/Documentos/GitHub/jeff-webcam/app/build/generated/res/resValues/release
+com.rtosta.app.jeffcam.app-packageReleaseResources-5 /home/tosta/Documentos/GitHub/jeff-webcam/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.rtosta.app.jeffcam.app-packageReleaseResources-6 /home/tosta/Documentos/GitHub/jeff-webcam/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.rtosta.app.jeffcam.app-release-7 /home/tosta/Documentos/GitHub/jeff-webcam/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.rtosta.app.jeffcam.app-main-8 /home/tosta/Documentos/GitHub/jeff-webcam/app/src/main/res
+com.rtosta.app.jeffcam.app-release-9 /home/tosta/Documentos/GitHub/jeff-webcam/app/src/release/res
