@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import { prominent } from 'color.js';
 import './App.css';
@@ -7,6 +7,18 @@ function App() {
   const webcamRef = useRef<Webcam>(null);
   const [imgSrc, setImgSrc] = useState<string | null>(null);
   const [dominantColor, setDominantColor] = useState<string | null>(null);
+  const [devices, setDevices] = useState<MediaDeviceInfo[]>([]);
+  const [currentDeviceId, setCurrentDeviceId] = useState<string | null>(null);
+
+  useEffect(() => {
+    navigator.mediaDevices.enumerateDevices().then((deviceInfos) => {
+      const videoDevices = deviceInfos.filter(device => device.kind === 'videoinput');
+      setDevices(videoDevices);
+      if (videoDevices.length > 0) {
+        setCurrentDeviceId(videoDevices[0].deviceId);
+      }
+    });
+  }, []);
 
   const capture = useCallback(async () => {
     if (webcamRef.current) {
@@ -28,11 +40,21 @@ function App() {
 
   return (
     <div className="app-container">
+      {devices.length > 1 && (
+        <select onChange={(e) => setCurrentDeviceId(e.target.value)} value={currentDeviceId || ''}>
+          {devices.map((device) => (
+            <option key={device.deviceId} value={device.deviceId}>{device.label || `Câmera ${device.deviceId}`}</option>
+          ))}
+        </select>
+      )}
       <Webcam
         audio={false}
         ref={webcamRef}
         screenshotFormat="image/jpeg"
         className="webcam-view"
+        videoConstraints={{
+          deviceId: currentDeviceId ? { exact: currentDeviceId } : undefined,
+        }}
       />
       <button onClick={capture} className="capture-button">Capturar Imagem</button>
       {imgSrc && <img src={imgSrc} alt="Captura" className="captured-image" />}
